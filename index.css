@@ -1,0 +1,311 @@
+@charset "ISO-8859-1";
+
+@import url(https://fonts.googleapis.com/css2?family=Barlow+Condensed%3Awght%40200%3B300%3B400%3B500%3B600%3B700%3B800%3B900&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Roboto%3Awght%40300%3B400%3B500%3B700%3B900&display=swap);
+
+*,
+*::before
+*::after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    outline: none;
+}
+:root{
+    --bg-white: #fff;
+    --primary-text: #061738;
+    --secondary-color: #60cd12;
+    --light-color: #e2f6de;
+    --dark-color: #03262c;
+    --text-white: #fff;
+    --text-gray: #dee2e6;
+    --anchor-color: #007aff;
+
+    --primary-font: 'Barlow condensed' , sans-serif;
+    --secondary-font: 'Roboto', sans-serif;
+
+}
+
+body,
+html{
+    color: var(--primary-text);
+    font-size: 10px;
+    font-weight: 400;
+    font-family: var(--primary-font);
+    scroll-behavior: smooth;
+    line-height: 1.5;
+}
+
+
+::-webkit-scrollbar{
+    width: 8px;
+}
+::-webkit-scrollbar-track{
+    background: var(--primary-text);
+}
+
+::-webkit-scrollbar-thumb{
+    background: var(--secondary-color);
+}
+/* nav bar css */
+
+.header{
+    position: absolute;
+    width: 100%;
+    top: 3rem;
+    left: 0;
+    z-index: 2;
+}
+
+.header .navbar{
+    background-color: #061738;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 2rem 5rem;
+    border-radius: 50px;
+    height: 90px;
+}
+.header .navbar-nav .nav-link{
+    color: var(--text-white);
+    text-transform: uppercase;
+    font-size: 31px;
+    font-weight: 900;
+    padding: 30px 30px;
+    margin: 61px;
+    font-family: var(--primary-font);
+}
+
+.header .navbar-nav .nav-link:hover , .header .navbar-nav .nav-link.active {
+    color: var(--secondary-color);
+}
+
+/* form */
+
+.form{
+    position: absolute;
+    width: 100%;
+    top: 19rem;
+    left: 0;
+    z-index: 2; 
+}
+
+.form .row{
+    background-color: #061738;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 2rem 5rem;
+    border-radius: 50px;
+}
+label{
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 400;
+    font-family: var(--primary-font);
+}
+.form input , .form select{
+    background-color: #061738;
+    border-color: #60cd12;
+    height: 40px;
+    color: #60cd12;
+    font-size: 15px;
+}
+.form input:focus{
+    background-color: #061738;
+    color: #60cd12;
+    box-shadow: none;
+}
+
+.main-btn{
+    position: relative;
+    color: var(--bg-white);
+    background: linear-gradient(to right, #0f7404, #5cb917);
+    z-index: 1;
+    overflow: hidden;
+    border: 0.2rem solid var(--bg-white);
+    border-radius: 3.5rem;
+    font-weight: 1000;
+    font-size: 1.8rem;
+    margin-top: 3.5rem;
+    letter-spacing: 0.2rem;
+}
+.main-btn:hover{
+    background: var(--bg-white);
+    color: var(--secondary-color);
+    border: 00.2rem solid var(--secondary-color);
+}
+
+button{
+    height: 50px;
+    width: 100px;
+}
+
+/* admin login */
+
+.login {
+    position: absolute;
+    width: 30%;
+    top: 19rem;
+    left: 35%;
+    z-index: 2; 
+}
+
+#login{
+    top: 19rem;
+}
+
+#update{
+    top: 30rem;
+}
+
+
+.login .row{
+    background-color: #061738;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 2rem 5rem;
+    border-radius: 50px;
+}
+label{
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--primary-font);
+}
+.login input , .login select{
+    background-color: #061738;
+    border-color: #60cd12;
+    height: 40px;
+    color: #60cd12;
+    font-size: 15px;
+}
+.login input:focus{
+    background-color: #061738;
+    color: #60cd12;
+    box-shadow: none;
+}
+
+.login .row .main-btn{
+    position: relative;
+    color: var(--bg-white);
+    background: linear-gradient(to right, #0f7404, #5cb917);
+    z-index: 1;
+    overflow: hidden;
+    border: 0.2rem solid var(--bg-white);
+    border-radius: 3.5rem;
+    font-weight: 1000;
+    font-size: 1.8rem;
+    margin-top: 3.5rem;
+    letter-spacing: 0.2rem;
+    width: 30%;
+    left: 35%;
+}
+.login .row .main-btn:hover{
+    background: var(--bg-white);
+    color: var(--secondary-color);
+    border: 00.2rem solid var(--secondary-color);
+}
+
+/* detasils */
+
+.details {
+    position: absolute;
+    width: 80%;
+    top: 19rem;
+    left: 10%;
+    
+}
+
+.details .table{
+    background-color: #061738;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    padding: 2rem 5rem;
+}
+.details  td {
+    color: var(--secondary-color);
+    font-size: 20px;
+    font-weight: 300;
+    font-family: var(--primary-font);
+}
+
+.details  th {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: var(--primary-font);
+}
+
+
+.details .table .main-btn {
+    position: relative;
+    color: var(--bg-white);
+    background: linear-gradient(to right, #0f7404, #5cb917);
+    z-index: 1;
+    overflow: hidden;
+    border: 0.2rem solid var(--bg-white);
+    border-radius: 3.5rem;
+    font-weight: 500;
+    font-size: 1.8rem;
+    margin-top: 0.0rem;
+    letter-spacing: 0.2rem;
+    height: 30px;
+    text-align-last: center;
+}
+.details .table .main-btn:hover{
+    background: var(--bg-white);
+    color: var(--secondary-color);
+    border: 00.2rem solid var(--secondary-color);
+}
+
+/* update */
+
+.updatetag h1{
+    position: absolute;
+    color: #5cb917;
+    top: 28%;
+    left: 38%;
+
+}
+
+/* view */
+
+.list{
+    display: inline-block;
+    position: relative;
+    font-size: large;
+    font-size: 20px;
+    margin-top: 13%;
+    left: 15%;
+    
+}
+
+.list h2 , h5{
+    color: #061738;
+}
+
+.list  h5{
+    font-size: 2rem;
+}
+
+
+.list ul{
+    color: #0f7404;
+}
+
+.home{
+    display: inline-block;
+    position: relative;
+    font-size: large;
+    margin-top: 23%;
+    left: 25%;
+}
+.home h1{
+    color: #0f7404;
+    font-size: 3rem;
+}
